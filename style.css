@@ -51,12 +51,15 @@ table {
 */
 body
 {
-	background-color: #FFFFFF;
+	background-color: #ffffff;
 }
 
 #logo
 {
 	width:150px;
+}
+#img{
+	width:200px;
 }
 .headerbody
 {
