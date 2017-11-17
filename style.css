@@ -47,90 +47,71 @@ table {
 	border-spacing: 0;
 }
 
-/* Notre style
-*/
+/* Notre style*/
+#style_logo
+{
+width:200px;
+}
 body
 {
-	background-color: #aaaaaa;
-max-width:1280px;
-min-height:100%;
-position:relative;
+	background-color: #7a7a7a;
+}
+nav ul
+{
+	background-color: #333;
+	min-height: 30px;
+	padding-top: 5px;
+}
+nav li
+{
+	float: left;
+	padding: 5px;
+	margin-left: 20px;
+	/*background-color: #FFF;*/
+	min-height: 10px;
 }
 
-#logo
+nav li a
 {
-	width:150px;
+	text-decoration: none;
 }
-#img{
-	width:200px;
+/*
+nav li:hover
+{
+	background-color: gold;
 }
+*/
 .headerbody
 {
-	text-align: center;
+	/*display : flex;*/
 
 }
 
 .headersection
 {
-	text-align: center;
 	/*display: flex;*/
 
 }
 
 .headerarticle
 {
-	text-align: center;
 	/*display: flex;*/
 
 }
 
 h1
 {
-
+	
 }
+
+
 h2
 {
 
 }
-h3
-{
-
-}
-nav 
-{
-
-}
-#main{
-max-width:1280px;
-min-height:100%;
-position:relative;
-}
-.nav {
-	display: flex;
- padding:0;
- margin:0;
- list-style-type:none;
- }
- li {
- float:left; /*pour IE*/
- border-left:1px solid #aaaaaa;
- }
-nav ul li a {
- display:block;
- float:left;   
- width:272px;
- line-height:50px; /*hauteur de l'image de fond*/
- background:black url(images/noir-1.png) repeat-x;
- color:#DCDCDC;
- text-decoration:none;
- text-align:center;
- }
 
 footer
 {
-	text-align: center;
-	display:block;
-	/*
-	test
-	*/
+	display: flex;
+	display: bottom;
 }

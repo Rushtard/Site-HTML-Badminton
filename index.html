@@ -1,22 +1,24 @@
 <!doctype html>
 <html>
 	<head>
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<meta charset = "UTF-8" />
 		<title>
 			Badminton
 		</title>
-
+<!--
 		<link rel="stylesheet" href="style.css">
+-->
 	</head>
-	<body id="main">
+	<body>
 		<header class="headerbody">
 			<h1>
 				Accueil
 			</h1>
-			<div id="sylelogo">
+			<div id="logo">
 				<a href="index.html">
 					<figure>
-						<img id="logo" src="images/BWF.png" alt="logo du site" title="Logo_Badminton"/>
+						<img src="images/BWF.png" alt="logo du site" title="Logo_Badminton" id="style_logo" style="width: 200px" />
 						<figcaption>Badminton World Federation</figcaption>
 					</figure>
 				</a>
@@ -28,42 +30,59 @@
 				<strong>Le Badminton pour tous !</strong>
 			</p>
 		</header>
-		<nav>
-			<ul class="nav">
-				<li>
-					<a href="index.html">Accueil</a>
-				</li>
-				<li>
-					<a href="what.html">Qu'est-ce que c'est?</a>
-				</li>
-				<li>
-					<a href="event.html">Evenements</a>
-				</li>
-				<li>
-					<a href="boutique.html">Boutiques</a>
-				</li>
-				<li>
-					<a href="learn.html">Apprendre le badminton</a>
-				</li>
-			</ul>
-		</nav>
+	
+	<nav class="navbar navbar-inverse navbar-fixed">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+          <a class="navbar-brand" href="index.html">Accueil</a>
+        </div>
+
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+			<li>
+				<a href="what.html">Qu'est-ce que c'est?</a>
+			</li>
+			<li>
+				<a href="event.html">Evenements</a>
+			</li>
+			<li>
+				<a href="boutique.html">Boutiques</a>
+			</li>
+			<li>
+				<a href="learn.html">Apprendre le badminton</a>
+			</li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+	
+	<div class="container">
+
+    </div>
+
+
 
 		<section>
-			<header class="headersection">
-				<h2> Présentation
-				</h2>
+			<header class="page-header">
+				<h2> Accueil</h2>
 			</header>
 
 
 
 			<article>
-				<header class="headerarticle">
-					<br/>
-					<h3> 
-						Bienvenue!
+				<header class="page-header">
+					<h3> Bienvenue!
 					</h3>
 				</header>
-				<p><br/>
+				<p>
 					Bienvenue sur notre site! 
 					<br/> 
 					Ici, nous allons parler de <strong> Badminton </strong> ! 
@@ -77,31 +96,29 @@
 
 
 			<article>
-				<br/>
 				<h1>
 					QUI SOMMES NOUS?
 				</h1>
 				<p>
-					<br/>
 					Nous sommes 5 élèves de la formation Licence Professionnelle : Métiers de l'Informatique - Applications Web - Administration et Sécurisation des Réseaux Intranet et Internet.
-					<br/>
 				</p>
 			</article>
 
 
 			<article>
-				<br/>
 				<h1>
 					Nous contacter
 				</h1>
-				<p>
-					<br/>
-					<à venir>
-					<br/>
-				</p>
 			</article>
 		</section>
 	</body>
+
+
+
+
+
+
+
 	<footer>
 		<h5>
 			Mentions Légales

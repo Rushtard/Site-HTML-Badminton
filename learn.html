@@ -2,23 +2,24 @@
 <html>
 	<head>
 		<meta charset = "UTF-8" />
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<title>
 			Apprendre le badminton
 		</title>
 
-		<link rel="stylesheet" href="style.css">
+	
 	</head>
 
-	<body id="main">
+	<body>
 
 		<header class="headerbody">
 			<h1>
 				Apprendre le badminton
 			</h1>
-			<div id="stylelogo">
+			<div id="logo">
 				<a href="index.html">
 					<figure>
-						<img id="logo" src="images/BWF.png" alt="logo du site" title="Logo_Badminton"/>
+						<img src="images/BWF.png" alt="logo du site" title="Logo_Badminton"  style="width:200px;" />
 						<figcaption>Badminton World Federation</figcaption>
 					</figure>
 				</a>
@@ -30,25 +31,37 @@
 				<strong>Le Badminton pour tous !</strong>
 			</p>
 		</header>
-		<nav>
-			<ul class="nav">
-				<li>
-					<a href="index.html">Accueil</a>
-				</li>
-				<li>
-					<a href="what.html">Qu'est-ce que c'est?</a>
-				</li>
-				<li>
-					<a href="event.html">Evenements</a>
-				</li>
-				<li>
-					<a href="boutique.html">Boutiques</a>
-				</li>
-				<li>
-					<a href="learn.html">Apprendre le badminton</a>
-				</li>
-			</ul>
-		</nav>
+		<nav class="navbar navbar-inverse navbar-fixed">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+          <a class="navbar-brand" href="index.html">Accueil</a>
+        </div>
+
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+			<li>
+				<a href="what.html">Qu'est-ce que c'est?</a>
+			</li>
+			<li>
+				<a href="event.html">Evenements</a>
+			</li>
+			<li>
+				<a href="boutique.html">Boutiques</a>
+			</li>
+			<li>
+				<a href="learn.html">Apprendre le badminton</a>
+			</li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 
 		<section>
 			<header class="headersection">
@@ -62,7 +75,7 @@
 			<article>
 				<header class="headerarticle">
 					<h3>Où apprendre le Badminton ?</h3>
-					<img id="img" src="images/badminton_apprendre_2.jpg" alt="badminton_apprendre_2"/>
+					<img src="images/badminton_apprendre_2.jpg" alt="badminton_apprendre_2" style="width:50%"/>
 				</header>
 				<div class="contenu">
 					<form action="learn.html" method="post">
@@ -77,7 +90,7 @@
 								</optgroup>
 								<optgroup label="Essonne">
 									<option value="evry">Evry</option>
-									<option value="corbeil-essonnes">Corbeil-Essonne</option>
+									<option value="corbeille">Corbeille</option>
 									<option value="val_de_marne">Val de Marne</option>
 								</optgroup>
 								<optgroup label="Yvelines">

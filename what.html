@@ -2,21 +2,22 @@
 <html>
 	<head>
 		<meta charset = "UTF-8" />
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<title>
 			Qu'est-ce que le badminton
 		</title>
-		<link rel="stylesheet" href="style.css">
+	
 	</head>
 
-	<body id="main">
+	<body>
 		<header class="headerbody">
 			<h1>
 				Qu'est-ce que le Badminton?
 			</h1>
-			<div id="stylelogo">
+			<div id="logo">
 				<a href="index.html">
 					<figure>
-						<img id="logo" src="images/BWF.png" alt="logo du site" title="Logo_Badminton"/>
+						<img src="images/BWF.png" alt="logo du site" title="Logo_Badminton"  style="width:200px;" />
 						<figcaption>Badminton World Federation</figcaption>
 					</figure>
 				</a>
@@ -28,60 +29,80 @@
 				<strong>Le Badminton pour tous !</strong>
 			</p>
 		</header>
-		<nav>
-			<ul class="nav">
-				<li>
-					<a href="index.html">Accueil</a>
-				</li>
-				<li>
-					<a href="what.html">Qu'est-ce que c'est?</a>
-				</li>
-				<li>
-					<a href="event.html">Evenements</a>
-				</li>
-				<li>
-					<a href="boutique.html">Boutiques</a>
-				</li>
-				<li>
-					<a href="learn.html">Apprendre le badminton</a>
-				</li>
-			</ul>
-		</nav>
+		<nav class="navbar navbar-inverse navbar-fixed">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+          <a class="navbar-brand" href="index.html">Accueil</a>
+        </div>
+
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+			<li>
+				<a href="what.html">Qu'est-ce que c'est?</a>
+			</li>
+			<li>
+				<a href="event.html">Evenements</a>
+			</li>
+			<li>
+				<a href="boutique.html">Boutiques</a>
+			</li>
+			<li>
+				<a href="learn.html">Apprendre le badminton</a>
+			</li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 
 		<section>
 			<header class="headersection">
 				<h2>
-					Sommaire 
 				</h2>
-				
-				<div>
-					<ol>
-						<li><a href="#Description" > Description </a></li><br/>
-						<li><a href="#Règle_du_badminton" >Règle du badminton </a></li><br/>
-						<li><a href="#Les_limites_du_terrain" >Les limites du terrain</a></li><br/>
-						<li><a href="#En_simple" >En simple</a></li><br/>
-						<li><a href="#En_double" >En double</a></li><br/>
-						<li><a href="#Comparaison_avec_la_pratique_du_tennis" >Comparaison avec la pratique du tennis</a></li><br/>
-					</ol>
-				</div>
 			</header>
 
 			<article>
 				<header class="headerarticle">
-					<h3 id="Description">
-						Description
+					<h3>
 					</h3>
 				</header>
-				<p>              
-				Le <strong> badminton</strong> est un sport de raquette qui oppose soit deux joueurs ou joueuses (simples), soit deux paires (doubles), placés dans deux demi-terrains séparés par un filet. Les joueurs et joueuses, appelés badistes, marquent des points en frappant un volant à l'aide d'une raquette pour le faire tomber dans le terrain adverse. L'échange se termine dès que le volant touche le sol, ou s'il y a faute.
+			</article>
+
+			<div>
+		
+				<h2>
+					Sommaire 
+				</h2>
+				<ol>
+					<li><a href="#Description" > Description </a></li>
+					<li><a href="#Règle_du_badminton" >Règle du badminton </a></li>
+					<li><a href="#Les_limites_du_terrain" >Les limites du terrain</a></li>
+					<li><a href="#En_simple" >En simple</a></li>
+					<li><a href="#En_double" >En double</a></li>
+					<li><a href="#Comparaison_avec_la_pratique_du_tennis" >Comparaison avec la pratique du tennis</a></li>
+				</ol>
 			
+			
+			
+			</div>
+				
+			<h2 id="Description">Description</h2>
+			<p>              
+				Le <strong> badminton</strong> est un sport de raquette qui oppose soit deux joueurs ou joueuses (simples), soit deux paires (doubles), placés dans deux demi-terrains séparés par un filet. Les joueurs et joueuses, appelés badistes, marquent des points en frappant un volant à l'aide d'une raquette pour le faire tomber dans le terrain adverse. L'échange se termine dès que le volant touche le sol, ou s'il y a faute.
+			</p>
 				<br />
 			
-				<img id="img" src="images/Terrain_badminton.png" alt="Terrain_badminton" title="Terrain_badminton" />
+				<img src="images/Terrain_badminton.png" alt="Terrain_badminton" title="Terrain_badminton"style="width:300px;"/>
 				<figcaption>
 					Terrain de badminton
 				</figcaption>
-				
+				<p>
 				Le volant est un <strong> projectile aux propriétés aérodynamiques uniques </strong> 
 				qui lui donnent une <strong> trajectoire</strong>  très différente des balles utilisées 
 				dans la plupart des sports de raquette. En particulier, les plumes 
@@ -90,13 +111,11 @@
 				trajectoire, car la masse d'un volant est généralement de <strong> cinq
 				grammes</strong> , le badminton est toujours pratiqué en<strong>  intérieur </strong> car avec
 				le vent, en extérieur,<strong>  le volant peut changer de direction.</strong> 
-				</p><img id="img" src="images/Volant_badminton.jpg" alt="Volant_badminton" title="Volant_badminton"/>
-				<figcaption>Volant de badminton</figcaption>
-			</article>
+				</p>
 			
 			
-			
-			
+			<img src="images/Volant_badminton.jpg" alt="Volant_badminton" title="Volant_badminton"style="width:200px;"/>
+			<figcaption>Volant de badminton</figcaption>
 			
 			
 			<h2 id="Règle_du_badminton">Règle du badminton</h2>
@@ -138,13 +157,13 @@
 			
 			</p>
 			
-			<img id="img" src="images/Badminton_Simple.png" alt="Badminton_Simple" title="Badminton_Simple"/>
+			<img src="images/Badminton_Simple.png" alt="Badminton_Simple" title="Badminton_Simple"style="width:150px;"/>
 			<figcaption>Zone pour un match en simple</figcaption>
 			
-			<img id="img" src="images/Terrain_Badminton.png" alt="Terrain_Badminton" title="Badminton_double"/>
+			<img src="images/Terrain_Badminton.png" alt="Terrain_Badminton" title="Badminton_double"style="width:150px;"/>
 			<figcaption>Zone pour un match en double</figcaption>
 			
-			<img id="img" src="images/Badminton_service_Double.png" alt="Badminton_service_Double" title="Badminton_service_Double"/>
+			<img src="images/Badminton_service_Double.png" alt="Badminton_service_Double" title="Badminton_service_Double"style="width:150px;"/>
 			<figcaption>Service pour un match en double</figcaption>
 			
 			

@@ -2,21 +2,21 @@
 <html>
 	<head>
 		<meta charset = "UTF-8" />
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<title>
 			Boutiques
 		</title>
 
-		<link rel="stylesheet" href="style.css">
 	</head>
-	<body id="main">
+	<body>
 		<header class="headerbody">
 			<h1>
 				Boutiques
 			</h1>
-			<div id="stylelogo">
+			<div id="logo">
 				<a href="index.html">
 					<figure>
-						<img id="logo" src="images/BWF.png" alt="logo du site" title="Logo_Badminton" />
+						<img src="images/BWF.png" alt="logo du site" title="Logo_Badminton"  style="width:200px;" />
 						<figcaption>Badminton World Federation</figcaption>
 					</figure>
 				</a>
@@ -28,76 +28,110 @@
 				<strong>Le Badminton pour tous !</strong>
 			</p>
 		</header>
-		<nav>
-			<ul class="nav">
-				<li>
-					<a href="index.html">Accueil</a>
-				</li>
-				<li>
-					<a href="what.html">Qu'est-ce que c'est?</a>
-				</li>
-				<li>
-					<a href="event.html">Evenements</a>
-				</li>
-				<li>
-					<a href="boutique.html">Boutiques</a>
-				</li>
-				<li>
-					<a href="learn.html">Apprendre le badminton</a>
-				</li>
-			</ul>
-		</nav>
+		<nav class="navbar navbar-inverse navbar-fixed">
+      		<div class="container">
+        	<div class="navbar-header">
+          	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	            <span class="sr-only">Menu</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+          	</button>
+          
+          	<a class="navbar-brand" href="index.html">Accueil</a>
+        	</div>
+
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+			<li>
+				<a href="what.html">Qu'est-ce que c'est?</a>
+			</li>
+			<li>
+				<a href="event.html">Evenements</a>
+			</li>
+			<li>
+				<a href="boutique.html">Boutiques</a>
+			</li>
+			<li>
+				<a href="learn.html">Apprendre le badminton</a>
+			</li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 
 		<section>
 			<header class="headersection">
 				<h2>
-					Sur cette page nous allons parler des boutiques et des marques dans lesquelles vous pouvez retrouvées vos accessoire et raquette. 
 				</h2>
 			</header>
 
 			<article>
 				<header class="headerarticle">
 					<h3>
-						Pour commencer, voici une petite liste des boutiques les plus connues de badminton
 					</h3>
 				</header>
+			</article>
 
+			<div>
+				<h1>
+					Sur cette page nous allons parler des boutiques et des marques dans lesquelles vous pouvez retrouvées vos accessoire et raquette. 
+				</h1>
 				<p>
-					<ul>
+
+				</p>
+			</div>
+				<article>
+					<p>	
+						<h4>
+						<div align ="center">
+							Pour commencer, voicis une petite liste des boutiques les plus connus de badminton
+						</h4>
+						</div>
+					
+						
+						<ul>
 						<strong>
 							TornadBad<br />
-							<a href="https:www.lardesports.com"><img id="img" src="images/tornadbad.jpg" alt= "TornadBadLogo"></a><br /><br />
-							Badmintonstore<br />
-							<a href="http://www.badmintonstore.fr/boutique.html"><img id="img" src="images/badmintonstor.png" alt= "Badminstrore" ></a><br /><br />
-							Badmania<br />
-							<a href="http://www.https://badmania.fr/"><img id="img" src="images/badmania.png" alt= "Badmamia"></a><br /><br />
+							Badminstore<br />
+							Badmania
 						</strong>
-					</ul>
+						</ul>
+						
+
+					</p>
+					<p>
 						<strong>	TornadBad	</strong>	 est un grande boutique qui suis le Champion Mr. Truc qui a gagné 5 Golden Award,
-						 		cette boutique est spétialisé dans les raquettes et les chaussures.<br /><br />
-						<strong>	Badmintonstore	</strong>	 est une boutique en ligne qui a comme particularité de vendre de tout, cette boutique n'as par contre pas de chamion qui recommande ces articles.<br /><br />
+						 		cette boutique est spétialisé dans les raquettes et les chaussures.<br />
+						<strong>	Badminstore	</strong>	 est une boutique en ligne qui a comme particularité de vendre de tout, cette boutique n'as par contre pas de chamion qui recommande ces articles.<br />
 						<strong>	Badmania	</strong>	 quant a elle est une entreprise familliale qui vend peu mais uniquement des articles d'une qualité rarement égalée.
 						
 					</p>
-			</article>
+				</article>
 				<article>
-					<header class="headerarticle">
-						<h3>
+						<h4>
+						<div align ="center">
+						<strong> 
 								Voici maintenant la liste des plus grandes marques de Badminton
-						</h3>
-					</header>
+						</strong>
+						</div>
+						</h4>
+
+						
 						<ul>
 						<strong>
-							Prince<br /><br />
-							<a href="http://www.princerackets.co.nz/cms/index.php""><img id="img" src="images/prince.jpg" alt= "Prince"></a><br /><br />
-							Badabourg<br /><br />
-							<a href="http://www.youbadit.fr/"><img id="img" src="images/youbadit.png" alt= "YouBadIt"></a><br /><br />
-							Head<br /><br />
-							<a href="https://www.head.com/fr-FR/sports/tennis/"><img id="img" src="images/head.jpg" alt= "Head"></a><br /><br />
+							Prince<br />
+							BadKing<br />
+							Head<br />
+							YouBadIt	
 						</ul>
 						</strong>
 
-						</strong>
+
+
+
+
+
 				</article>
 		</section>
 	</body>

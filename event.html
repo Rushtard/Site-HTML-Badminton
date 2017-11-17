@@ -2,21 +2,21 @@
 <html>
 	<head>
 		<meta charset = "UTF-8" />
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<title>
 			Evenements
 		</title>
-
-		<link rel="stylesheet" href="style.css">
+		
 	</head>
-	<body id="main">
+	<body>
 		<header class="headerbody">
 			<h1>
 				Evênements
 			</h1>
-			<div id="stylelogo">
+			<div id="logo">
 				<a href="index.html">
 					<figure>
-						<img id="logo" src="images/BWF.png" alt="logo du site" title="Logo_Badminton"/>
+						<img src="images/BWF.png" alt="logo du site" title="Logo_Badminton"  style="width:200px;" />
 						<figcaption>Badminton World Federation</figcaption>
 					</figure>
 				</a>
@@ -28,25 +28,37 @@
 				<strong>Le Badminton pour tous !</strong>
 			</p>
 		</header>
-		<nav>
-			<ul class="nav">
-				<li>
-					<a href="index.html">Accueil</a>
-				</li>
-				<li>
-					<a href="what.html">Qu'est-ce que c'est?</a>
-				</li>
-				<li>
-					<a href="event.html">Evenements</a>
-				</li>
-				<li>
-					<a href="boutique.html">Boutiques</a>
-				</li>
-				<li>
-					<a href="learn.html">Apprendre le badminton</a>
-				</li>
-			</ul>
-		</nav>
+		<nav class="navbar navbar-inverse navbar-fixed">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+          <a class="navbar-brand" href="index.html">Accueil</a>
+        </div>
+
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+			<li>
+				<a href="what.html">Qu'est-ce que c'est?</a>
+			</li>
+			<li>
+				<a href="event.html">Evenements</a>
+			</li>
+			<li>
+				<a href="boutique.html">Boutiques</a>
+			</li>
+			<li>
+				<a href="learn.html">Apprendre le badminton</a>
+			</li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 
 		<section>
 			<header class="headersection">
