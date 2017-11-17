@@ -51,7 +51,10 @@ table {
 */
 body
 {
-	background-color: #000000;
+	background-color: #aaaaaa;
+max-width:1280px;
+min-height:100%;
+position:relative;
 }
 
 #logo
@@ -63,18 +66,20 @@ body
 }
 .headerbody
 {
-	/*display : flex;*/
+	text-align: center;
 
 }
 
 .headersection
 {
+	text-align: center;
 	/*display: flex;*/
 
 }
 
 .headerarticle
 {
+	text-align: center;
 	/*display: flex;*/
 
 }
@@ -95,8 +100,34 @@ nav
 {
 
 }
+#main{
+max-width:1280px;
+min-height:100%;
+position:relative;
+}
+.nav {
+	display: flex;
+ padding:0;
+ margin:0;
+ list-style-type:none;
+ }
+ li {
+ float:left; /*pour IE*/
+ border-left:1px solid #aaaaaa;
+ }
+nav ul li a {
+ display:block;
+ float:left;   
+ width:272px;
+ line-height:50px; /*hauteur de l'image de fond*/
+ background:black url(images/noir-1.png) repeat-x;
+ color:#DCDCDC;
+ text-decoration:none;
+ text-align:center;
+ }
+
 footer
 {
-	display: flex;
-	display: bottom;
+	text-align: center;
+	display:block;
 }
